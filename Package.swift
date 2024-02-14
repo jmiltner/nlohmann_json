@@ -9,11 +9,11 @@ let package = Package(
         .iOS(.v12), .macOS(.v10_13), .tvOS(.v12), .watchOS(.v4)
     ],
     products: [
-        .library(name: "nlohmann_json", targets: ["nlohmann_json"])
+        .library(name: "json", targets: ["json"])
     ],
     targets: [
         .target(
-            name: "nlohmann_json",
+            name: "json",
             path: "single_include/nlohmann",
             publicHeadersPath: "."
         )
